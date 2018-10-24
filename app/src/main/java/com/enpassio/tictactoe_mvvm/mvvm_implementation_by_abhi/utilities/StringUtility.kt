@@ -1,4 +1,4 @@
-package com.enpassio.tictactoe_mvvm.utilities
+package com.enpassio.tictactoe_mvvm.mvvm_implementation_by_abhi.utilities
 
 object StringUtility {
 

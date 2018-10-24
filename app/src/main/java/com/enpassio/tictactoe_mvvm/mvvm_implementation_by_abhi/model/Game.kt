@@ -1,8 +1,8 @@
-package com.enpassio.tictactoe_mvvm.model
+package com.enpassio.tictactoe_mvvm.mvvm_implementation_by_abhi.model
 
 import android.arch.lifecycle.MutableLiveData
 import android.util.Log
-import com.enpassio.tictactoe_mvvm.utilities.StringUtility.isNullOrEmpty
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_abhi.utilities.StringUtility.isNullOrEmpty
 
 
 class Game(playerOne: String, playerTwo: String) {
