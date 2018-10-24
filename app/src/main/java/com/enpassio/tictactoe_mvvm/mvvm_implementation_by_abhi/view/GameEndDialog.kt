@@ -21,7 +21,7 @@ class GameEndDialog : DialogFragment() {
         val alertDialog = AlertDialog.Builder(getContext()!!)
             .setView(rootView)
             .setCancelable(false)
-            .setPositiveButton(R.string.done) { dialog!!, which -> onNewGame() }
+            .setPositiveButton(R.string.done) { dialog, which -> onNewGame() }
             .create()
         alertDialog.setCanceledOnTouchOutside(false)
         alertDialog.setCancelable(false)
