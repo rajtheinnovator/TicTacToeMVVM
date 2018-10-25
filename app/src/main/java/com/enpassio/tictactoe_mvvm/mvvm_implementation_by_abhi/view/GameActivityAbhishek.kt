@@ -26,7 +26,7 @@ class GameActivityAbhishek : AppCompatActivity() {
 
     fun promptForPlayers() {
         Log.d("my_tag", "promptForPlayers of Activity called")
-        val dialog = GameBeginDialog.newInstance(this)
+        val dialog = GameBeginDialogAbhishek.newInstance(this)
         dialog.setCancelable(false)
         dialog.show(supportFragmentManager, GAME_BEGIN_DIALOG_TAG)
     }
@@ -55,7 +55,7 @@ class GameActivityAbhishek : AppCompatActivity() {
     fun onGameWinnerChanged(winner: Player?) {
         Log.d("my_tag", "onGameWinnerChanged of Activity called")
         val winnerName = if (winner == null || isNullOrEmpty(winner.name)) NO_WINNER else winner.name
-        val dialog = GameEndDialog.newInstance(this, winnerName)
+        val dialog = GameEndDialogAbhishek.newInstance(this, winnerName)
         dialog.setCancelable(false)
         dialog.show(supportFragmentManager, GAME_END_DIALOG_TAG)
     }

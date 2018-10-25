@@ -15,7 +15,7 @@ import android.view.View
 import com.enpassio.tictactoe_mvvm.R
 
 
-class GameBeginDialog : DialogFragment() {
+class GameBeginDialogAbhishek : DialogFragment() {
 
     private var player1Layout: TextInputLayout? = null
     private var player2Layout: TextInputLayout? = null
@@ -30,7 +30,7 @@ class GameBeginDialog : DialogFragment() {
     private var activity: GameActivityAbhishek? = null
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        Log.d("my_tag", "onCreateDialog of GameBeginDialog called")
+        Log.d("my_tag", "onCreateDialog of GameBeginDialogAbhishek called")
         initViews()
         val alertDialog = AlertDialog.Builder(getContext()!!)
             .setView(rootView)
@@ -45,9 +45,9 @@ class GameBeginDialog : DialogFragment() {
     }
 
     private fun initViews() {
-        Log.d("my_tag", "initViews of GameBeginDialog called")
+        Log.d("my_tag", "initViews of GameBeginDialogAbhishek called")
         rootView = LayoutInflater.from(getContext())
-            .inflate(R.layout.game_begin_dialog, null, false)
+            .inflate(R.layout.abhishek_game_begin_dialog, null, false)
 
         player1Layout = rootView!!.findViewById(R.id.layout_player1)
         player2Layout = rootView!!.findViewById(R.id.layout_player2)
@@ -58,13 +58,13 @@ class GameBeginDialog : DialogFragment() {
     }
 
     private fun onDialogShow(dialog: AlertDialog) {
-        Log.d("my_tag", "onDialogShow of GameBeginDialog called")
+        Log.d("my_tag", "onDialogShow of GameBeginDialogAbhishek called")
         val positiveButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE)
         positiveButton.setOnClickListener({ v -> onDoneClicked() })
     }
 
     private fun onDoneClicked() {
-        Log.d("my_tag", "onDoneClicked of GameBeginDialog called")
+        Log.d("my_tag", "onDoneClicked of GameBeginDialogAbhishek called")
         if (isAValidName(player1Layout, player1) and isAValidName(player2Layout, player2)) {
             activity!!.onPlayersSet(player1!!, player2!!)
             dismiss()
@@ -72,7 +72,7 @@ class GameBeginDialog : DialogFragment() {
     }
 
     private fun isAValidName(layout: TextInputLayout?, name: String?): Boolean {
-        Log.d("my_tag", "isAValidName of GameBeginDialog called")
+        Log.d("my_tag", "isAValidName of GameBeginDialogAbhishek called")
         if (TextUtils.isEmpty(name)) {
             layout!!.isErrorEnabled = true
             layout.error = getString(R.string.game_dialog_empty_name)
@@ -91,7 +91,7 @@ class GameBeginDialog : DialogFragment() {
     }
 
     private fun addTextWatchers() {
-        Log.d("my_tag", "addTextWatchers of GameBeginDialog called")
+        Log.d("my_tag", "addTextWatchers of GameBeginDialogAbhishek called")
         player1EditText!!.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
 
@@ -113,9 +113,9 @@ class GameBeginDialog : DialogFragment() {
     }
 
     companion object {
-        fun newInstance(activity: GameActivityAbhishek): GameBeginDialog {
-            Log.d("my_tag", "newInstance of GameBeginDialog called")
-            val dialog = GameBeginDialog()
+        fun newInstance(activity: GameActivityAbhishek): GameBeginDialogAbhishek {
+            Log.d("my_tag", "newInstance of GameBeginDialogAbhishek called")
+            val dialog = GameBeginDialogAbhishek()
             dialog.activity = activity
             return dialog
         }
