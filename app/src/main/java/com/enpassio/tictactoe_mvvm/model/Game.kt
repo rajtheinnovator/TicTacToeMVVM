@@ -28,7 +28,12 @@ class Game(playerOne: String, playerTwo: String) {
         }
 
     init {
-
+        Log.d(TAG, "Game is initialized")
+        cells = Array(BOARD_SIZE) { it ->
+            Array(BOARD_SIZE) {
+                Cell(null)
+            }
+        }
         player1 = Player(playerOne, "x")
         player2 = Player(playerTwo, "o")
         currentPlayer = player1
@@ -56,7 +61,8 @@ class Game(playerOne: String, playerTwo: String) {
 
             return false
         } catch (e: NullPointerException) {
-            Log.e(TAG, e.message)
+            val err = if (e.message == null) "error messages failed" else e.message
+            Log.e(TAG, err)
             return false
         }
 
@@ -69,7 +75,8 @@ class Game(playerOne: String, playerTwo: String) {
                     return true
             return false
         } catch (e: NullPointerException) {
-            Log.e(TAG, e.message)
+            val err = if (e.message == null) "error messages failed" else e.message
+            Log.e(TAG, err)
             return false
         }
 
@@ -83,7 +90,8 @@ class Game(playerOne: String, playerTwo: String) {
                 cells!![2][0]
             )
         } catch (e: NullPointerException) {
-            Log.e(TAG, e.message)
+            val err = if (e.message == null) "error messages failed" else e.message
+            Log.e(TAG, err)
             return false
         }
 
