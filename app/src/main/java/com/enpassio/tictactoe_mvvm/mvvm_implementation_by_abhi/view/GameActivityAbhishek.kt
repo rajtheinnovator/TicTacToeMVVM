@@ -8,13 +8,13 @@ import android.support.annotation.VisibleForTesting
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
 import com.enpassio.tictactoe_mvvm.R
-import com.enpassio.tictactoe_mvvm.databinding.ActivityGameBinding
+import com.enpassio.tictactoe_mvvm.databinding.AbhishekActivityGameBinding
 import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_abhi.model.Player
 import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_abhi.utilities.StringUtility.isNullOrEmpty
 import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_abhi.viewmodel.GameViewModel
 
 
-class GameActivity : AppCompatActivity() {
+class GameActivityAbhishek : AppCompatActivity() {
     private var gameViewModel: GameViewModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,7 +38,8 @@ class GameActivity : AppCompatActivity() {
 
     private fun initDataBinding(player1: String, player2: String) {
         Log.d("my_tag", "initDataBinding of Activity called")
-        val activityGameBinding = DataBindingUtil.setContentView<ActivityGameBinding>(this, R.layout.activity_game)
+        val activityGameBinding =
+            DataBindingUtil.setContentView<AbhishekActivityGameBinding>(this, R.layout.abhishek_activity_game)
         gameViewModel = ViewModelProviders.of(this).get(GameViewModel::class.java)
         gameViewModel!!.init(player1, player2)
         activityGameBinding.gameViewModel = gameViewModel

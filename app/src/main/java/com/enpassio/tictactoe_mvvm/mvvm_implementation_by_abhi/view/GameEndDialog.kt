@@ -14,7 +14,7 @@ import com.enpassio.tictactoe_mvvm.R
 class GameEndDialog : DialogFragment() {
 
     private var rootView: View? = null
-    private var activity: GameActivity? = null
+    private var activity: GameActivityAbhishek? = null
     private var winnerName: String? = null
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
@@ -44,7 +44,7 @@ class GameEndDialog : DialogFragment() {
     }
 
     companion object {
-        fun newInstance(activity: GameActivity, winnerName: String): GameEndDialog {
+        fun newInstance(activity: GameActivityAbhishek, winnerName: String): GameEndDialog {
             Log.d("my_tag", "newInstance of GameEndDialog called")
             val dialog = GameEndDialog()
             dialog.activity = activity

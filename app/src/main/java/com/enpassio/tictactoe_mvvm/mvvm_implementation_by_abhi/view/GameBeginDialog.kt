@@ -27,7 +27,7 @@ class GameBeginDialog : DialogFragment() {
     private var player2: String? = null
 
     private var rootView: View? = null
-    private var activity: GameActivity? = null
+    private var activity: GameActivityAbhishek? = null
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         Log.d("my_tag", "onCreateDialog of GameBeginDialog called")
@@ -113,7 +113,7 @@ class GameBeginDialog : DialogFragment() {
     }
 
     companion object {
-        fun newInstance(activity: GameActivity): GameBeginDialog {
+        fun newInstance(activity: GameActivityAbhishek): GameBeginDialog {
             Log.d("my_tag", "newInstance of GameBeginDialog called")
             val dialog = GameBeginDialog()
             dialog.activity = activity

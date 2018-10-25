@@ -12,7 +12,7 @@
             android:theme="@style/AppTheme"
             tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity android:name=".MainActivity"/>
-        <activity android:name=".mvvm_implementation_by_abhi.view.GameActivity">
+        <activity android:name=".mvvm_implementation_by_abhi.view.GameActivityAbhishek">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
