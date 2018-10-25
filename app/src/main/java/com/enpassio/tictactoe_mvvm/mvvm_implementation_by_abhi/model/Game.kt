@@ -57,7 +57,9 @@ class Game(playerOne: String, playerTwo: String) {
 
             return false
         } catch (e: NullPointerException) {
-            Log.e(TAG, e.message)
+            val err = if (e.message == null) "error messages failed" else e.message
+            Log.e(TAG, err)
+            //Log.e(TAG, e.message)
             return false
         }
 
@@ -70,7 +72,9 @@ class Game(playerOne: String, playerTwo: String) {
                     return true
             return false
         } catch (e: NullPointerException) {
-            Log.e(TAG, e.message)
+//            Log.e(TAG, e.message)
+            val err = if (e.message == null) "error messages failed" else e.message
+            Log.e(TAG, err)
             return false
         }
 
@@ -84,7 +88,9 @@ class Game(playerOne: String, playerTwo: String) {
                 cells!![2][0]
             )
         } catch (e: NullPointerException) {
-            Log.e(TAG, e.message)
+//            Log.e(TAG, e.message)
+            val err = if (e.message == null) "error messages failed" else e.message
+            Log.e(TAG, err)
             return false
         }
 
