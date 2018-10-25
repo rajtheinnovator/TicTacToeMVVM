@@ -1,4 +1,4 @@
-package com.enpassio.tictactoe_mvvm.viewmodel
+package com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.viewmodel
 
 /**
  * Created by Greta Grigutė on 2018-10-25.
@@ -7,10 +7,10 @@ import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.ViewModel
 import android.databinding.ObservableArrayMap
 import android.util.Log
-import com.enpassio.tictactoe_mvvm.model.Cell
-import com.enpassio.tictactoe_mvvm.model.Game
-import com.enpassio.tictactoe_mvvm.model.Player
-import com.enpassio.tictactoe_mvvm.utilities.StringUtility.stringFromNumbers
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.model.Cell
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.model.Game
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.model.Player
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.utilities.StringUtility.stringFromNumbers
 
 class GameViewModel : ViewModel() {
     var cells: ObservableArrayMap <String, String>? = null

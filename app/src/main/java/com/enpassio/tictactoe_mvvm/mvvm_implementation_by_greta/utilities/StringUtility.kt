@@ -1,4 +1,4 @@
-package com.enpassio.tictactoe_mvvm.utilities
+package com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.utilities
 
 /**
  * Created by Greta Grigutė on 2018-10-25.

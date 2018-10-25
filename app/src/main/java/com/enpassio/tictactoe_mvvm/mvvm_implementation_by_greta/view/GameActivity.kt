@@ -1,18 +1,16 @@
-package com.enpassio.tictactoe_mvvm.view
+package com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.view
 
 import android.arch.lifecycle.Observer
 import android.arch.lifecycle.ViewModelProviders
-import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import android.databinding.DataBindingUtil
+import android.os.Bundle
 import android.support.annotation.VisibleForTesting
-
-import com.enpassio.tictactoe_mvvm.model.Player
+import android.support.v7.app.AppCompatActivity
 import com.enpassio.tictactoe_mvvm.R
-import com.enpassio.tictactoe_mvvm.utilities.StringUtility.isNullOrEmpty
 import com.enpassio.tictactoe_mvvm.databinding.ActivityGameBinding
-import com.enpassio.tictactoe_mvvm.viewmodel.GameViewModel
-
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.model.Player
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.utilities.StringUtility.isNullOrEmpty
+import com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.viewmodel.GameViewModel
 
 class GameActivity : AppCompatActivity() {
     private var gameViewModel: GameViewModel? = null

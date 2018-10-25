@@ -1,13 +1,13 @@
-package com.enpassio.tictactoe_mvvm.view
+package com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.view
 
 
 import android.app.Dialog
-import android.widget.TextView
-import android.view.LayoutInflater
 import android.os.Bundle
 import android.support.v4.app.DialogFragment
 import android.support.v7.app.AlertDialog
+import android.view.LayoutInflater
 import android.view.View
+import android.widget.TextView
 import com.enpassio.tictactoe_mvvm.R
 
 

@@ -5,7 +5,7 @@
     <data>
         <variable
                 name="gameViewModel"
-                type="com.enpassio.tictactoe_mvvm.viewmodel.GameViewModel" />
+                type="com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.viewmodel.GameViewModel"/>
     </data>
 
     <android.support.v7.widget.GridLayout

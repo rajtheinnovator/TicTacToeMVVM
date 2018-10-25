@@ -1,4 +1,4 @@
-package com.enpassio.tictactoe_mvvm.view
+package com.enpassio.tictactoe_mvvm.mvvm_implementation_by_greta.view
 
 import android.app.Dialog
 import android.os.Build
